@@ -1,0 +1,43 @@
+<html>
+	<body>
+
+		<div class="" style="text-align: center">
+			<h1>Classify company name</h1>
+		</div>	
+
+		{% if prediction ==  "information technology and services" %}
+		<div class="front" style="text-align: center">
+			<img src="static/its.jpg" alt="its">
+			<p style="font-size:40px;">{{name}}</p> <p style="font-size:40px;">{{country}}</p>
+		</div>
+
+		{% elif prediction ==  "marketing and advertising" %}
+		<div class="front" style="text-align: center">
+			<img src="static/ma.jpg" alt="ma">
+			<p style="font-size:40px;">{{name}}</p> <p style="font-size:40px;">{{country}}</p>
+		</div>
+
+		{% elif prediction ==  "constructing" %}
+		<div class="front" style="text-align: center">
+			<img src="static/construct.jpg" alt="construct">
+			<p style="font-size:40px;">{{name}}</p> <p style="font-size:40px;">{{country}}</p>
+		</div>
+
+		
+		{% elif prediction ==  "management consulting" %}
+		<div class="front" style="text-align: center">
+			<img src="static/mc.jpg" alt="mc">
+			<p style="font-size:40px;">{{name}}</p> <p style="font-size:40px;">{{country}}</p>
+		</div>
+
+		{% elif prediction ==  "real estate" %}
+		<div class="front" style="text-align: center">
+			<img src="static/re.jpg" alt="re">
+			<p style="font-size:40px;">{{name}}</p> <p style="font-size:40px;">{{country}}</p>
+		</div>
+
+		{%endif%}
+	<body>
+</html>
+
+

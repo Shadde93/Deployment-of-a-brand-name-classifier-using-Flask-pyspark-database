@@ -1,0 +1,31 @@
+<html>
+	<body>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+		<div class="front" style="text-align:center">
+			<h1>Classify company name</h1>
+			<h2>Settings</h2>
+			<h3>Select industries</h3>
+		</div>	
+
+		<div class ="" style="text-align:center">
+			<div style="display: inline-block; text-align: left">
+				<form method="POST" action="/main">
+					<p><input type="checkbox" name="options" value="information technology and services"> 
+					information technology and services </input><br></p>
+					<p><input type="checkbox" name="options" value="marketing and advertising"> 
+					marketing and advertising </input><br></p>
+					<p><input type="checkbox" name="options" value="constructing"> 
+					constructing </input><br></p>
+					<p><input type="checkbox" name="options" value="management consulting"> 
+					management consulting </input><br></p>
+					<p><input type="checkbox" name="options" value="real estate"> 
+					real estate </input><br></p>
+					<p><input type=submit value='Next' name='submit_btn', onclick="$('#loading').show();"></p>
+				</form>
+				<div id="loading" style="display:none;"><img src="static/load.gif" alt="" /> Loading! </div>
+			</div> 
+		</div> 
+
+	</body>
+</html>

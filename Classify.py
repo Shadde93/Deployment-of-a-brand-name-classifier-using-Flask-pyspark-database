@@ -77,10 +77,3 @@ def main_function(sel):
     pdf_clean = clean_df(pdf)
     data_transform_save_model(pdf_clean)
     return(print('Model ready'))
-
-if __name__ == "__main__":
-    sel = str(('tobacco', 'ranching'))
-    main_function(sel)
-    name = 'Sweco'
-    country = 'Sweden'
-    pred_input(name, country)

@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap
 from Classify import main_function, pred_input
 import pickle
-
+sfd
 app = Flask(__name__)
 #Bootstrap(app)
 
